@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>entity</OriginalElement>
+  <nodes>
+    <node x="562.9375" y="886.0">entity.CourseAssociation</node>
+    <node x="521.6462962962962" y="236.0">entity.Assessment</node>
+    <node x="991.812962962963" y="1479.0">entity.Teacher</node>
+    <node x="995.062962962963" y="886.0">entity.Credentials</node>
+    <node x="713.812962962963" y="1424.0">entity.Student</node>
+    <node x="206.2004629629629" y="1659.0">entity.StudentCourseAssociation</node>
+    <node x="667.0634259259258" y="0.0">entity.AssessmentCategory</node>
+    <node x="653.2712962962962" y="572.0">entity.Course</node>
+    <node x="487.6875" y="2006.0">entity.TeacherCourseAssociation</node>
+    <node x="767.562962962963" y="1033.0">entity.Person</node>
+    <node x="0.0" y="561.0">entity.AssessmentMark</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="entity.StudentCourseAssociation" target="entity.Teacher">
+      <point x="172.39999999999998" y="-148.5" />
+      <point x="594.1004629629629" y="1639.0" />
+      <point x="1059.062962962963" y="1639.0" />
+      <point x="-67.25" y="37.5" />
+    </edge>
+    <edge source="entity.TeacherCourseAssociation" target="entity.StudentCourseAssociation">
+      <point x="-99.39999999999998" y="-93.5" />
+      <point x="636.7875" y="1976.0" />
+      <point x="529.4504629629629" y="1976.0" />
+      <point x="107.75" y="148.5" />
+    </edge>
+    <edge source="entity.TeacherCourseAssociation" target="entity.Student">
+      <point x="99.39999999999998" y="-93.5" />
+      <point x="835.5875" y="1986.0" />
+      <point x="907.312962962963" y="1986.0" />
+      <point x="64.5" y="92.5" />
+    </edge>
+    <edge source="entity.StudentCourseAssociation" target="entity.Student">
+      <point x="86.20000000000005" y="-148.5" />
+      <point x="507.90046296296293" y="1629.0" />
+      <point x="778.312962962963" y="1629.0" />
+      <point x="-64.5" y="92.5" />
+    </edge>
+    <edge source="entity.Course" target="entity.Assessment">
+      <point x="-49.875" y="-126.5" />
+      <point x="802.8962962962962" y="536.0" />
+      <point x="805.3962962962962" y="536.0" />
+      <point x="56.75" y="137.5" />
+    </edge>
+    <edge source="entity.Assessment" target="entity.Course">
+      <point x="170.25000000000003" y="137.5" />
+      <point x="918.8962962962962" y="536.0" />
+      <point x="902.6462962962962" y="536.0" />
+      <point x="49.875" y="-126.5" />
+    </edge>
+    <edge source="entity.TeacherCourseAssociation" target="entity.Teacher">
+      <point x="198.79999999999998" y="-93.5" />
+      <point x="934.9875" y="1986.0" />
+      <point x="1193.562962962963" y="1986.0" />
+      <point x="67.25" y="37.5" />
+    </edge>
+    <edge source="entity.StudentCourseAssociation" target="entity.AssessmentMark">
+      <point x="-172.39999999999992" y="-148.5" />
+      <point x="249.30046296296297" y="1639.0" />
+      <point x="321.63842592592584" y="1639.0" />
+      <point x="321.63842592592584" y="861.0" />
+      <point x="140.0" y="861.0" />
+      <point x="-140.0" y="137.5" />
+    </edge>
+    <edge source="entity.Assessment" target="entity.AssessmentCategory">
+      <point x="0.0" y="-137.5" />
+      <point x="748.6462962962962" y="211.0" />
+      <point x="776.5634259259258" y="211.0" />
+      <point x="0.0" y="93.0" />
+    </edge>
+    <edge source="entity.CourseAssociation" target="entity.Course">
+      <point x="0.0" y="-48.5" />
+      <point x="683.4375" y="861.0" />
+      <point x="753.0212962962962" y="861.0" />
+      <point x="-99.75" y="126.5" />
+    </edge>
+    <edge source="entity.Student" target="entity.Person">
+      <point x="0.0" y="-92.5" />
+      <point x="842.812962962963" y="1399.0" />
+      <point x="876.062962962963" y="1399.0" />
+      <point x="-108.5" y="170.5" />
+    </edge>
+    <edge source="entity.StudentCourseAssociation" target="entity.CourseAssociation">
+      <point x="0.0" y="-148.5" />
+      <point x="421.7004629629629" y="1639.0" />
+      <point x="417.84629629629626" y="1639.0" />
+      <point x="417.84629629629626" y="1013.0" />
+      <point x="593.0625" y="1013.0" />
+      <point x="-90.375" y="48.5" />
+    </edge>
+    <edge source="entity.Person" target="entity.Credentials">
+      <point x="86.79999999999995" y="-170.5" />
+      <point x="1071.362962962963" y="1013.0" />
+      <point x="1053.312962962963" y="1013.0" />
+      <point x="-58.25" y="48.5" />
+    </edge>
+    <edge source="entity.Person" target="entity.CourseAssociation">
+      <point x="-173.60000000000014" y="-170.5" />
+      <point x="810.9629629629628" y="1013.0" />
+      <point x="713.5625" y="1013.0" />
+      <point x="30.125" y="48.5" />
+    </edge>
+    <edge source="entity.AssessmentMark" target="entity.Assessment">
+      <point x="140.0" y="-137.5" />
+      <point x="420.0" y="536.0" />
+      <point x="578.3962962962962" y="536.0" />
+      <point x="-170.25" y="137.5" />
+    </edge>
+    <edge source="entity.TeacherCourseAssociation" target="entity.CourseAssociation">
+      <point x="0.0" y="-93.5" />
+      <point x="736.1875" y="1986.0" />
+      <point x="703.312962962963" y="1986.0" />
+      <point x="703.312962962963" y="1013.0" />
+      <point x="653.3125" y="1013.0" />
+      <point x="-30.125" y="48.5" />
+    </edge>
+    <edge source="entity.Person" target="entity.Course">
+      <point x="0.0" y="-170.5" />
+      <point x="984.562962962963" y="861.0" />
+      <point x="952.5212962962962" y="861.0" />
+      <point x="99.75000000000003" y="126.5" />
+    </edge>
+    <edge source="entity.Teacher" target="entity.Person">
+      <point x="0.0" y="-37.5" />
+      <point x="1126.312962962963" y="1399.0" />
+      <point x="1093.062962962963" y="1399.0" />
+      <point x="108.5" y="170.5" />
+    </edge>
+    <edge source="entity.Course" target="entity.AssessmentCategory">
+      <point x="149.62500000000003" y="-126.5" />
+      <point x="1002.3962962962962" y="536.0" />
+      <point x="986.1462962962962" y="536.0" />
+      <point x="986.1462962962962" y="211.0" />
+      <point x="849.5634259259258" y="211.0" />
+      <point x="73.0" y="93.0" />
+    </edge>
+    <edge source="entity.AssessmentMark" target="entity.AssessmentCategory">
+      <point x="-140.0" y="-137.5" />
+      <point x="140.0" y="211.0" />
+      <point x="703.5634259259258" y="211.0" />
+      <point x="-73.0" y="93.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.2792589245368279" x="630.5" y="1096.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Properties</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
